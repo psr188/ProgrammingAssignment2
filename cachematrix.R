@@ -34,3 +34,18 @@ cacheSolve<- function(x, ...) {
         x$setinv(Inv)
         Inv
 }
+## Example Output
+
+## > M = matrix(c(2,4,10,12),2,2)
+## > M1 = makeCacheMatrix(M)
+
+## > cacheSolve(M1)
+## [,1]   [,2]
+## [1,] -0.75  0.625
+## [2,]  0.25 -0.125
+
+## > cacheSolve(M1)
+## getting cached data - Inverse of the matrix
+## [,1]   [,2]
+## [1,] -0.75  0.625
+## [2,]  0.25 -0.125
